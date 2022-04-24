@@ -1,0 +1,87 @@
+body {
+  background: #98DFFD;
+}
+
+.container{
+ height:300px;
+ font-family: 'Lato', sans-serif;
+} 
+
+.search-form {
+ right: 300px;
+ top: 300px;  
+}
+
+.search-field {
+ background-color: transparent;
+ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/bf/Search--v2.png);
+ background-position: 5px  center;
+ background-repeat: no-repeat;
+ background-size: 24px 24px;
+ border: none;
+ cursor: pointer;
+ height: 40px;
+ margin: 3px 0;
+ padding: 0 0 0 34px;
+ position: relative;
+ -webkit-transition: width 400ms ease, background 400ms ease;
+ transition:         width 400ms ease, background 400ms ease;
+ width:0px;
+  cursor: pointer;
+}
+
+.search-field:focus {
+ background-color: #e8eded;
+ border: 2px solid #000;
+ cursor: text;
+ outline: 0;
+ width: 70px;
+ color:#000;
+}
+.search-form
+.search-submit { 
+display:none;
+}
+
+:root {
+ --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+ --gray: #34495e;
+ --darkgray: #2c3e50;
+}
+
+select {
+ appearance: none;
+ outline: 0;
+ border: 0;
+ box-shadow: none;
+ flex: 1;
+ padding: 0 1em;
+ color: #000000;
+ background-color: #e8eded;
+ background-image: none;
+ cursor: pointer;
+}
+
+.select {
+ position: relative;
+ display: flex;
+ width: 20em;
+ height: 3em;
+ border-radius: .25em;
+ overflow: hidden;
+}
+
+.select::after {
+ content: '\25BC';
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 1em;
+ background-color: #d3f5f3;
+ transition: .25s all ease;
+ pointer-events: none;
+}
+
+.select:hover::after {
+ color: #e8eded;
+}
